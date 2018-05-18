@@ -1,0 +1,73 @@
+@import './vars'
+
+body
+  box-sizing: border-box
+  margin: 0
+  font-size: 14px
+  user-select: none
+  color: #000
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  outline: none
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+a, a:hover, a:active
+  text-decoration: none
+  outline: none
+
+button:focus
+  outline: none
+
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+.text-center
+  text-align: center
+.block
+  display: block
+.inline
+  display: inline-block
+.no-padding
+  padding: 0
+.no-margin
+  margin: 0
+
+button
+  padding: 10px 15px
+  color: #ffffff
+  font-weight: bold
+  border: none
+  border-radius: 3px
+  cursor: pointer
+  margin: 5px 0
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4)
+  &.primary
+    background-color: $mainColor
+  &.secondary
+    background-color: $secondaryColor
+  &.danger
+    background-color: #ff4149
+  &:disabled
+    background-color: #eeeeee
+    cursor: not-allowed
+  &:active
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4)
+
+.error
+  color: red
+  width: 100%
+  text-align: center
+
+//input
+//  border: 1px solid #eeeeee
+//  padding: 10px 15px 10px 8px
+//  border-radius: 5px
+

@@ -1,0 +1,39 @@
+@import '../../styles/vars'
+
+.Whales
+  padding: 20px
+  .order
+    display: flex
+    width: 100%
+    margin-right: 10px
+    margin-bottom: 10px
+  .data
+    transition: height .5s, transform .3s
+    height: 100%
+    transform-origin: 50% 0
+    transform: scaleY(1)
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    &.close
+      height: 0
+      transform: scaleY(0)
+  .symbol
+    font-weight: bold
+    width: 90px
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    i
+      margin-left: 5px
+      font-size: 20px
+      margin-top: -3px
+  ul
+    margin-left: 20px
+    display: inline-flex
+    margin-bottom: 5px
+    background-color: $mainColor
+    border-radius: 5px
+    li
+      padding: 10px
+      color: #fff
